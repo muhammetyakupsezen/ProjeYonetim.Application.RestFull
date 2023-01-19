@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeYonetim.Application.RestFull", "ProjeYonetim.Application.RestFull\ProjeYonetim.Application.RestFull.csproj", "{B81EFA13-3CFF-4B2D-886A-B757E04D2097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeYonetim.Web", "ProjeYonetim.Web\ProjeYonetim.Web.csproj", "{397089C8-50AB-476C-9F5C-C25BF0FC4ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeYonetim.Business", "ProjeYonetim.Business\ProjeYonetim.Business.csproj", "{3089B909-A4E1-49BD-8295-1C17913E66D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeYonetim.Data", "ProjeYonetim.Data\ProjeYonetim.Data.csproj", "{DD09AF1D-2A3A-4E6C-A674-2DB1ECEC57F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeYonetim.Security", "ProjeYonetim.Security\ProjeYonetim.Security.csproj", "{C0C59B1A-FF14-486C-BEFF-6FA168285416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjeYonetim.Helper", "ProjeYonetim.Helper\ProjeYonetim.Helper.csproj", "{0F97EF56-05B8-40D2-90BC-055C840301C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B81EFA13-3CFF-4B2D-886A-B757E04D2097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81EFA13-3CFF-4B2D-886A-B757E04D2097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81EFA13-3CFF-4B2D-886A-B757E04D2097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81EFA13-3CFF-4B2D-886A-B757E04D2097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397089C8-50AB-476C-9F5C-C25BF0FC4ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397089C8-50AB-476C-9F5C-C25BF0FC4ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397089C8-50AB-476C-9F5C-C25BF0FC4ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397089C8-50AB-476C-9F5C-C25BF0FC4ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3089B909-A4E1-49BD-8295-1C17913E66D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3089B909-A4E1-49BD-8295-1C17913E66D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3089B909-A4E1-49BD-8295-1C17913E66D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3089B909-A4E1-49BD-8295-1C17913E66D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD09AF1D-2A3A-4E6C-A674-2DB1ECEC57F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD09AF1D-2A3A-4E6C-A674-2DB1ECEC57F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD09AF1D-2A3A-4E6C-A674-2DB1ECEC57F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD09AF1D-2A3A-4E6C-A674-2DB1ECEC57F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C59B1A-FF14-486C-BEFF-6FA168285416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C59B1A-FF14-486C-BEFF-6FA168285416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C59B1A-FF14-486C-BEFF-6FA168285416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C59B1A-FF14-486C-BEFF-6FA168285416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F97EF56-05B8-40D2-90BC-055C840301C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F97EF56-05B8-40D2-90BC-055C840301C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F97EF56-05B8-40D2-90BC-055C840301C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F97EF56-05B8-40D2-90BC-055C840301C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C90B7962-38F6-4266-9DB5-75CC191E5262}
+	EndGlobalSection
+EndGlobal
