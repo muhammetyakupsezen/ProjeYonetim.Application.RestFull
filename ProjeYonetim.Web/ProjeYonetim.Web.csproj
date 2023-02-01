@@ -976,11 +976,17 @@
     <Content Include="Jquerry\jquery-3.6.1.min.js" />
     <Content Include="Jquerry\Main.js" />
     <Content Include="Jquerry\MyJs.js" />
+    <Content Include="MyAngular\AngularGiris\angular.min.js" />
+    <Content Include="MyAngular\AngularGiris\AngularJS.html" />
+    <Content Include="MyAngular\AngularGiris\CommonFactory.js" />
+    <Content Include="MyAngular\AngularGiris\CommonService.js" />
+    <Content Include="MyAngular\AngularGiris\Main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ApiController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PanelController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1019,6 +1025,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Panel\IndexPanel.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

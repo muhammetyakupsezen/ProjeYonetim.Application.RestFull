@@ -14,20 +14,21 @@ namespace ProjeYonetim.Web.Controllers
         public ActionResult Index()
         {
             return View();
-        } 
-        
+        }
+
         public ActionResult IndexPanel()
         {
             HttpCookie NameCookie = Request.Cookies["ProjeYonetim"];
             string CookieToken = NameCookie != null ? NameCookie.Value.Split('=')[1] : "undefined";
             string SessionToken = HttpContext.Session["Token"].ToString();
 
-            if (CookieToken != SessionToken)
+            if (SessionToken.IndexOf(CookieToken) == -1)
             {
                 Session["Token"] = "";
                 Session["Login"] = false;
-                Response.Redirect("~/", true);
+                Response.Redirect("~/Error?ErrorCode=TokenError", true);
             }
+
             //else
             //{
             //    TRestClient restClient = new TRestClient();

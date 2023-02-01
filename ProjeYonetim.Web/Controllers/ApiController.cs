@@ -31,6 +31,7 @@ namespace ProjeYonetim.Web.Controllers
                     Response.Cookies.Add(NameCookie);
                     Session["Token"] = ResultData;
                     Session["Login"] = true;
+                    Response.Redirect("~/Panel/IndexPanel");
 
                 }
 
@@ -49,7 +50,7 @@ namespace ProjeYonetim.Web.Controllers
             TResult result = new TResult();
             VwKisiKullaniciIletisim PersonData = new VwKisiKullaniciIletisim();
 
-            if (CookieToken == SessionToken)
+            if (SessionToken.IndexOf(CookieToken) > -1)
             {
                 TRestClient client = new TRestClient();
 
@@ -63,9 +64,16 @@ namespace ProjeYonetim.Web.Controllers
 
         }
 
+        [HttpGet]
+        public ActionResult GetServerDateTime()
+        {
+            string Result = DateTime.Now.ToString("dd:MM:yyyy HH:mm:ss");
+
+            return Json(Result,JsonRequestBehavior.AllowGet);
+        }
 
 
 
 
-    }
+        }
 }

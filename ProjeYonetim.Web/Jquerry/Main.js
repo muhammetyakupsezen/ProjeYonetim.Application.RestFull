@@ -115,37 +115,38 @@ function ShowAlert(picon, ptitle, ptext) {
 
 
 function GetLoginUserDetail() {
-  
-        $.ajax({
-            url: "/Api/GetLoginUserDetail",
-            success: function (result, e, f) {
-                if (f.status === 200) {
-                    if (result != "") {
-                        var LblNameSurname = document.getElementById('LblNameSurname');
-                        LblNameSurname.innerText = result.Ad + " " + result.Soyad;
-                        var LblTitle = document.getElementById('LblTitle');
-                        LblTitle.innerText = result.Unvan;
-                        var LblWelcome = document.getElementById('LblWelcome');
-                        LblWelcome.innerText = "Merhaba" + result.Ad + " " + result.Soyad;
+
+    $.ajax({
+        url: "/Api/GetLoginUserDetail",
+        success: function (result, e, f) {
+            if (f.status === 200) {
+                if (result != "") {
+                    var LblNameSurname = document.getElementById('LblNameSurname');
+                    LblNameSurname.innerText = result.Ad + " " + result.Soyad;
+                    var LblTitle = document.getElementById('LblTitle');
+                    LblTitle.innerText = result.Unvan;
+                    var LblWelcome = document.getElementById('LblWelcome');
+                    LblWelcome.innerText = "Merhaba" + result.Ad + " " + result.Soyad;
                 }
                 else {
                     ShowAlert('error', 'Hata', 'Hatalı bilgi girişi');
                 }
-            },
-          //  data: { "Username": Username, "Password": Password },
-            method: "GET"
-        }).done(function (result, e, f) {
-            var f = result;
-        }).fail(function (result, e, f) {
-            if (result.status === 500) {
-                ShowAlert('error', 'Hata', 'Hatalı bilgi girişi');
             }
-        }).catch(function (result, e, f) {
-            var h = result;
-        }).progress(function (result, e, f) {
-            var y = result;
-        });
+        },
+        //  data: { "Username": Username, "Password": Password },
+        method: "GET"
+    }).done(function (result, e, f) {
+        var f = result;
+    }).fail(function (result, e, f) {
+        if (result.status === 500) {
+            ShowAlert('error', 'Hata', 'Hatalı bilgi girişi');
+        }
+    }).catch(function (result, e, f) {
+        var h = result;
+    }).progress(function (result, e, f) {
+        var y = result;
+    });
 
-    
+
 
 }

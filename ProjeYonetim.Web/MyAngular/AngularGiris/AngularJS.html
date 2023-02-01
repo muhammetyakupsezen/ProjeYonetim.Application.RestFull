@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <script src="angular.min.js"></script>
+    <script src="CommonFactory.js"></script>
+    <script src="CommonService.js"></script>
+    <script src="Main.js"></script>
+
+</head>
+<body>
+    
+    <div ng-app="OrnekApplication" ng-controller="OrnekController">
+        {{Welcome}}
+
+
+        <br />
+
+
+        <label ng-bind="Welcome"></label>
+
+        <br />
+
+        <input type="text" ng-model="TxtName" />
+        <br />
+        <label ng-bind="TxtName"></label>
+
+        <input type="button" ng-click="SayHello()" value="{{Welcome}}" />
+        <br />
+
+
+        <input type="text" ng-model="TxtMetin" ng-change="BuyukHarf();" />
+        <br />
+        <label ng-bind="BuyukMetin"></label>
+
+
+    </div>
+</body>
+</html>
